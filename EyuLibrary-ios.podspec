@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     #    s.use_frameworks!
     s.name             = 'EyuLibrary-ios'
-    s.version          = '2.4.24'
+    s.version          = '2.4.30'
     s.summary          = 'A short description of EyuLibrary-ios.'
     
     # This description is used to generate tags and improve search results.
@@ -223,7 +223,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'thinking_sdk' do |thinking|
-        thinking.dependency 'ThinkingSDK'
+        thinking.dependency 'ThinkingSDK', '2.8.3.2'
         thinking.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) THINKING_ENABLED'}
     end
     
