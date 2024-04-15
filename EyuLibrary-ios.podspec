@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'iron_ads_sdk' do |iron_ads_sdk|
-        iron_ads_sdk.dependency 'IronSourceSDK','7.0.3.0.0'
+        iron_ads_sdk.dependency 'IronSourceSDK','7.1.6.1'
         iron_ads_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) IRON_ADS_ENABLED'}
     end
     
