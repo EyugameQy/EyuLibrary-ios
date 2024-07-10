@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'af_sdk' do |af|
-        af.dependency 'AppsFlyerFramework','6.2.5'
+        af.dependency 'AppsFlyerFramework','6.12.2'
         af.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) AF_ENABLED'}
     end
     
@@ -85,7 +85,7 @@ Pod::Spec.new do |s|
     # end
     
     s.subspec 'applovin_ads_sdk' do |applovin_ads_sdk|
-        applovin_ads_sdk.dependency 'AppLovinSDK','10.3.2'
+        applovin_ads_sdk.dependency 'AppLovinSDK','12.2.1'
         applovin_ads_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) APPLOVIN_ADS_ENABLED'}
     end
     
