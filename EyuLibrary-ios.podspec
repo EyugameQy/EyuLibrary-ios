@@ -151,7 +151,6 @@ Pod::Spec.new do |s|
     
     s.subspec 'firebase_sdk' do |firebase|
         firebase.dependency 'Firebase/Analytics'
-        firebase.dependency 'Firebase/Core'
         firebase.dependency 'Firebase/Messaging'
         firebase.dependency 'Firebase/RemoteConfig'
         firebase.dependency 'Firebase/Auth'
