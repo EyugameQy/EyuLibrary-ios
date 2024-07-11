@@ -146,18 +146,18 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'crashlytics_sdk' do |crash|
-        crash.dependency 'Firebase/Crashlytics', '8.6.0'
+        crash.dependency 'Firebase/Crashlytics'
     end
     
     s.subspec 'firebase_sdk' do |firebase|
-        firebase.dependency 'Firebase/Analytics', '8.6.0'
-        firebase.dependency 'Firebase/Core', '8.6.0'
-        firebase.dependency 'Firebase/Messaging', '8.6.0'
-        firebase.dependency 'Firebase/RemoteConfig', '8.6.0'
-        firebase.dependency 'Firebase/Auth', '8.6.0'
-        firebase.dependency 'Firebase/Firestore', '8.6.0'
-        firebase.dependency 'Firebase/Storage', '8.6.0'
-        firebase.dependency 'Firebase/DynamicLinks', '8.6.0'
+        firebase.dependency 'Firebase/Analytics'
+        firebase.dependency 'Firebase/Core'
+        firebase.dependency 'Firebase/Messaging'
+        firebase.dependency 'Firebase/RemoteConfig'
+        firebase.dependency 'Firebase/Auth'
+        firebase.dependency 'Firebase/Firestore'
+        firebase.dependency 'Firebase/Storage'
+        firebase.dependency 'Firebase/DynamicLinks'
 #        firebase.dependency 'Firebase/AdMob', '7.8.0'
         firebase.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FIREBASE_ENABLED'}
     end
