@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     #    s.use_frameworks!
     s.name             = 'EyuLibrary-ios'
-    s.version          = '2.4.39'
+    s.version          = '2.4.40'
     s.summary          = 'A short description of EyuLibrary-ios.'
     
     # This description is used to generate tags and improve search results.
@@ -90,16 +90,16 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'applovin_max_sdk' do |applovin_max_sdk|
-        applovin_max_sdk.dependency 'AppLovinSDK'
-        applovin_max_sdk.dependency 'AppLovinMediationFacebookAdapter'
-        applovin_max_sdk.dependency 'AppLovinMediationMintegralAdapter'
-        applovin_max_sdk.dependency 'AppLovinMediationGoogleAdapter'
-        applovin_max_sdk.dependency 'AppLovinMediationIronSourceAdapter'
-        applovin_max_sdk.dependency 'AppLovinMediationByteDanceAdapter'
-        applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter'
-        applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter'
-        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter'
-        applovin_max_sdk.dependency 'FBSDKCoreKit'
+        applovin_max_sdk.dependency 'AppLovinSDK','12.2.1'
+        applovin_max_sdk.dependency 'AppLovinMediationFacebookAdapter','6.14.0.1'
+        applovin_max_sdk.dependency 'AppLovinMediationMintegralAdapter','7.5.6.0.0'
+        applovin_max_sdk.dependency 'AppLovinMediationGoogleAdapter','10.14.0.1'
+        applovin_max_sdk.dependency 'AppLovinMediationIronSourceAdapter','7.8.0.0.0'
+        applovin_max_sdk.dependency 'AppLovinMediationByteDanceAdapter','5.9.0.9.0'
+        applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','4.9.2.1'
+        applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','7.2.2.0'
+        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','8.2.5.2'
+        applovin_max_sdk.dependency 'FBSDKCoreKit','11.1.0'
         applovin_max_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) APPLOVIN_MAX_ENABLED' }
     end
     
