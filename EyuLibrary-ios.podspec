@@ -150,13 +150,13 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'firebase_sdk' do |firebase|
-        firebase.dependency 'Firebase/Analytics'
-        firebase.dependency 'Firebase/Messaging'
-        firebase.dependency 'Firebase/RemoteConfig'
-        firebase.dependency 'Firebase/Auth'
-        firebase.dependency 'Firebase/Firestore'
-        firebase.dependency 'Firebase/Storage'
-        firebase.dependency 'Firebase/DynamicLinks'
+        firebase.dependency 'FirebaseAnalytics'
+        firebase.dependency 'FirebaseMessaging'
+        firebase.dependency 'FirebaseRemoteConfig'
+        firebase.dependency 'FirebaseAuth'
+        firebase.dependency 'FirebaseFirestore'
+        firebase.dependency 'FirebaseStorage'
+        firebase.dependency 'FirebaseDynamicLinks'
 #        firebase.dependency 'Firebase/AdMob', '7.8.0'
         firebase.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FIREBASE_ENABLED'}
     end
