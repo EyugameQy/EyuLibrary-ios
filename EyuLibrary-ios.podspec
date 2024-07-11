@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'iron_ads_sdk' do |iron_ads_sdk|
-        iron_ads_sdk.dependency 'IronSourceSDK','8.1.1.0'
+        iron_ads_sdk.dependency 'IronSourceSDK','7.0.3.0.0'
         iron_ads_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) IRON_ADS_ENABLED'}
     end
     
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'fb_ads_sdk' do |fb_ads_sdk|
-        fb_ads_sdk.dependency 'FBAudienceNetwork','6.15.1'
+        fb_ads_sdk.dependency 'FBAudienceNetwork','6.5.1'
         fb_ads_sdk.dependency 'FBSDKCoreKit','11.1.0'
         fb_ads_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FB_ADS_ENABLED FACEBOOK_ENABLED'}
     end
@@ -85,20 +85,20 @@ Pod::Spec.new do |s|
     # end
     
     s.subspec 'applovin_ads_sdk' do |applovin_ads_sdk|
-        applovin_ads_sdk.dependency 'AppLovinSDK'
+        applovin_ads_sdk.dependency 'AppLovinSDK','10.3.2'
         applovin_ads_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) APPLOVIN_ADS_ENABLED'}
     end
     
     s.subspec 'applovin_max_sdk' do |applovin_max_sdk|
-        applovin_max_sdk.dependency 'AppLovinSDK','12.2.1'
-        applovin_max_sdk.dependency 'AppLovinMediationFacebookAdapter','6.14.0.1'
-        applovin_max_sdk.dependency 'AppLovinMediationMintegralAdapter','7.5.6.0.0'
-        applovin_max_sdk.dependency 'AppLovinMediationGoogleAdapter','10.14.0.1'
-        applovin_max_sdk.dependency 'AppLovinMediationIronSourceAdapter','7.8.0.0.0'
+        applovin_max_sdk.dependency 'AppLovinSDK','11.5.0'
+        applovin_max_sdk.dependency 'AppLovinMediationFacebookAdapter','6.5.1.0'
+        applovin_max_sdk.dependency 'AppLovinMediationMintegralAdapter','7.2.6.0.1'
+        applovin_max_sdk.dependency 'AppLovinMediationGoogleAdapter','8.9.0.0'
+        applovin_max_sdk.dependency 'AppLovinMediationIronSourceAdapter','7.1.6.1.0'
         applovin_max_sdk.dependency 'AppLovinMediationByteDanceAdapter','5.9.0.9.0'
-        applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','4.9.2.1'
-        applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','7.2.2.0'
-        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','8.2.5.2'
+        applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','3.7.5.0'
+        applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','6.10.1.0'
+        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','7.8.3.2'
         applovin_max_sdk.dependency 'FBSDKCoreKit','11.1.0'
         applovin_max_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) APPLOVIN_MAX_ENABLED' }
     end
