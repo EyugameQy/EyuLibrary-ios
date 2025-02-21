@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'admob_sdk' do |admob|
-        admob.dependency 'Google-Mobile-Ads-SDK','8.9.0'
+        admob.dependency 'Google-Mobile-Ads-SDK','11.12.0'
         admob.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) ADMOB_ADS_ENABLED'}
     end
     
@@ -192,7 +192,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'admob_mediation_sdk' do |admob_mediation|
-        admob_mediation.dependency 'Google-Mobile-Ads-SDK','8.2.0'
+        admob_mediation.dependency 'Google-Mobile-Ads-SDK','11.12.0'
         admob_mediation.dependency 'GoogleMobileAdsMediationAppLovin', '10.0.1.0'
         admob_mediation.dependency 'GoogleMobileAdsMediationFacebook', '6.3.0.0'
         admob_mediation.dependency 'FBSDKCoreKit','9.1.0'
@@ -231,7 +231,7 @@ Pod::Spec.new do |s|
 #       'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/framework/ReYunTracking/Headers/**",
 #        abu.preserve_paths = 'EyuLibrary-ios/Classes/framework/ABUAdSDK/*.framework'
         abu.vendored_frameworks = 'EyuLibrary-ios/Classes/framework/ABUAdSDK/*.framework'
-        abu.dependency 'Google-Mobile-Ads-SDK','8.6.0'
+        abu.dependency 'Google-Mobile-Ads-SDK','11.12.0'
         abu.dependency 'Ads-CN', '3.7.0.7'
         abu.dependency 'GDTMobSDK','4.12.81'
         abu.dependency 'UnityAds','3.7.2'
