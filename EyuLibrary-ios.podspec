@@ -90,15 +90,15 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'applovin_max_sdk' do |applovin_max_sdk|
-        applovin_max_sdk.dependency 'AppLovinSDK','13.0.1'
-        applovin_max_sdk.dependency 'AppLovinMediationFacebookAdapter','6.15.2.1'
-        applovin_max_sdk.dependency 'AppLovinMediationMintegralAdapter','7.7.3.0.0'
-        applovin_max_sdk.dependency 'AppLovinMediationGoogleAdapter','11.12.0.0'
-        applovin_max_sdk.dependency 'AppLovinMediationIronSourceAdapter','8.4.0.0.0'
-        applovin_max_sdk.dependency 'AppLovinMediationByteDanceAdapter','6.3.1.0.0'
-        applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','4.12.4.0'
-        applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','7.4.2.1'
-        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','8.3.2.1'
+        applovin_max_sdk.dependency 'AppLovinSDK','11.5.0'
+        applovin_max_sdk.dependency 'AppLovinMediationFacebookAdapter','6.5.1.0'
+        applovin_max_sdk.dependency 'AppLovinMediationMintegralAdapter','7.2.6.0.1'
+        applovin_max_sdk.dependency 'AppLovinMediationGoogleAdapter','8.9.0.0'
+        applovin_max_sdk.dependency 'AppLovinMediationIronSourceAdapter','7.1.6.1.0'
+        applovin_max_sdk.dependency 'AppLovinMediationByteDanceAdapter','5.9.0.9.0'
+        applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','3.7.5.0'
+        applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','6.10.1.0'
+        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','7.8.3.2'
         applovin_max_sdk.dependency 'FBSDKCoreKit','11.1.0'
         applovin_max_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) APPLOVIN_MAX_ENABLED' }
     end
