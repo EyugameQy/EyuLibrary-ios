@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     #    s.use_frameworks!
     s.name             = 'EyuLibrary-ios'
-    s.version          = '2.4.46'
+    s.version          = '2.4.56'
     s.summary          = 'A short description of EyuLibrary-ios.'
     
     # This description is used to generate tags and improve search results.
@@ -68,12 +68,12 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'admob_sdk' do |admob|
-        admob.dependency 'Google-Mobile-Ads-SDK','8.9.0'
+        admob.dependency 'Google-Mobile-Ads-SDK','11.12.0'
         admob.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) ADMOB_ADS_ENABLED'}
     end
     
     s.subspec 'fb_ads_sdk' do |fb_ads_sdk|
-        fb_ads_sdk.dependency 'FBAudienceNetwork','6.5.1'
+        fb_ads_sdk.dependency 'FBAudienceNetwork','6.15.2'
         fb_ads_sdk.dependency 'FBSDKCoreKit','11.1.0'
         fb_ads_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FB_ADS_ENABLED FACEBOOK_ENABLED'}
     end
@@ -90,15 +90,15 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'applovin_max_sdk' do |applovin_max_sdk|
-        applovin_max_sdk.dependency 'AppLovinSDK','11.5.0'
-        applovin_max_sdk.dependency 'AppLovinMediationFacebookAdapter','6.5.1.0'
-        applovin_max_sdk.dependency 'AppLovinMediationMintegralAdapter','7.2.6.0.1'
-        applovin_max_sdk.dependency 'AppLovinMediationGoogleAdapter','8.9.0.0'
-        applovin_max_sdk.dependency 'AppLovinMediationIronSourceAdapter','7.1.6.1.0'
-        applovin_max_sdk.dependency 'AppLovinMediationByteDanceAdapter','5.9.0.9.0'
-        applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','3.7.5.0'
-        applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','6.10.1.0'
-        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','7.8.3.2'
+        applovin_max_sdk.dependency 'AppLovinSDK','11.11.4' #4.3.41
+        applovin_max_sdk.dependency 'AppLovinMediationIronSourceAdapter','7.3.0'
+        applovin_max_sdk.dependency 'AppLovinMediationFacebookAdapter','6.14.0'
+        applovin_max_sdk.dependency 'AppLovinMediationMintegralAdapter','7.7.6.0'
+        applovin_max_sdk.dependency 'AppLovinMediationGoogleAdapter','10.1.0'
+        applovin_max_sdk.dependency 'AppLovinMediationByteDanceAdapter','6.5.0.8'
+        applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','4.12.1'
+        applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','7.4.3'
+        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','8.3.5'
         applovin_max_sdk.dependency 'FBSDKCoreKit','11.1.0'
         applovin_max_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) APPLOVIN_MAX_ENABLED' }
     end
@@ -146,17 +146,17 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'crashlytics_sdk' do |crash|
-        crash.dependency 'FirebaseCrashlytics','8.1.0'
+        crash.dependency 'FirebaseCrashlytics','10.29.0'
     end
     
     s.subspec 'firebase_sdk' do |firebase|
-        firebase.dependency 'Firebase','8.1.0'
-        firebase.dependency 'FirebaseMessaging','8.1.0'
-        firebase.dependency 'FirebaseRemoteConfig','8.1.0'
-        firebase.dependency 'FirebaseAuth','8.1.0'
-        firebase.dependency 'FirebaseFirestore','8.1.0'
-        firebase.dependency 'FirebaseStorage','8.1.0'
-        firebase.dependency 'FirebaseDynamicLinks','8.1.0'
+        firebase.dependency 'Firebase','10.29.0'
+        firebase.dependency 'FirebaseMessaging','10.29.0'
+        firebase.dependency 'FirebaseRemoteConfig','10.29.0'
+        firebase.dependency 'FirebaseAuth','10.29.0'
+        firebase.dependency 'FirebaseFirestore','10.29.0'
+        firebase.dependency 'FirebaseStorage','10.29.0'
+        firebase.dependency 'FirebaseDynamicLinks','10.29.0'
 #        firebase.dependency 'Firebase/AdMob', '7.8.0'
         firebase.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FIREBASE_ENABLED'}
     end
