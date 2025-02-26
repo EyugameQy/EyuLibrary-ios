@@ -68,12 +68,12 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'admob_sdk' do |admob|
-        admob.dependency 'Google-Mobile-Ads-SDK','11.12.0'
+        admob.dependency 'Google-Mobile-Ads-SDK','8.9.0'
         admob.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) ADMOB_ADS_ENABLED'}
     end
     
     s.subspec 'fb_ads_sdk' do |fb_ads_sdk|
-        fb_ads_sdk.dependency 'FBAudienceNetwork','6.15.2'
+        fb_ads_sdk.dependency 'FBAudienceNetwork','6.5.1'
         fb_ads_sdk.dependency 'FBSDKCoreKit','11.1.0'
         fb_ads_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FB_ADS_ENABLED FACEBOOK_ENABLED'}
     end
@@ -90,15 +90,15 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'applovin_max_sdk' do |applovin_max_sdk|
-        applovin_max_sdk.dependency 'AppLovinSDK','11.11.4' #4.3.41
-        applovin_max_sdk.dependency 'AppLovinMediationIronSourceAdapter','7.3.0'
-        applovin_max_sdk.dependency 'AppLovinMediationFacebookAdapter','6.14.0'
-        applovin_max_sdk.dependency 'AppLovinMediationMintegralAdapter','7.7.6.0'
-        applovin_max_sdk.dependency 'AppLovinMediationGoogleAdapter','10.1.0'
-        applovin_max_sdk.dependency 'AppLovinMediationByteDanceAdapter','6.5.0.8'
-        applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','4.12.1'
-        applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','7.4.3'
-        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','8.3.5'
+        applovin_max_sdk.dependency 'AppLovinSDK','11.5.0'
+        applovin_max_sdk.dependency 'AppLovinMediationFacebookAdapter','6.5.1.0'
+        applovin_max_sdk.dependency 'AppLovinMediationMintegralAdapter','7.2.6.0.1'
+        applovin_max_sdk.dependency 'AppLovinMediationGoogleAdapter','8.9.0.0'
+        applovin_max_sdk.dependency 'AppLovinMediationIronSourceAdapter','7.1.6.1.0'
+        applovin_max_sdk.dependency 'AppLovinMediationByteDanceAdapter','5.9.0.9.0'
+        applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','3.7.5.0'
+        applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','6.10.1.0'
+        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','7.8.3.2'
         applovin_max_sdk.dependency 'FBSDKCoreKit','11.1.0'
         applovin_max_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) APPLOVIN_MAX_ENABLED' }
     end
@@ -192,7 +192,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'admob_mediation_sdk' do |admob_mediation|
-        admob_mediation.dependency 'Google-Mobile-Ads-SDK','11.12.0'
+        admob_mediation.dependency 'Google-Mobile-Ads-SDK','8.2.0'
         admob_mediation.dependency 'GoogleMobileAdsMediationAppLovin', '10.0.1.0'
         admob_mediation.dependency 'GoogleMobileAdsMediationFacebook', '6.3.0.0'
         admob_mediation.dependency 'FBSDKCoreKit','9.1.0'
@@ -231,7 +231,7 @@ Pod::Spec.new do |s|
 #       'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/framework/ReYunTracking/Headers/**",
 #        abu.preserve_paths = 'EyuLibrary-ios/Classes/framework/ABUAdSDK/*.framework'
         abu.vendored_frameworks = 'EyuLibrary-ios/Classes/framework/ABUAdSDK/*.framework'
-        abu.dependency 'Google-Mobile-Ads-SDK','11.12.0'
+        abu.dependency 'Google-Mobile-Ads-SDK','8.6.0'
         abu.dependency 'Ads-CN', '3.7.0.7'
         abu.dependency 'GDTMobSDK','4.12.81'
         abu.dependency 'UnityAds','3.7.2'
