@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'admob_sdk' do |admob|
-        admob.dependency 'Google-Mobile-Ads-SDK','8.9.0'
+        admob.dependency 'Google-Mobile-Ads-SDK','10.14.0'
         admob.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) ADMOB_ADS_ENABLED'}
     end
     
