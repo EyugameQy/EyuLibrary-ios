@@ -74,7 +74,7 @@ Pod::Spec.new do |s|
     
     s.subspec 'fb_ads_sdk' do |fb_ads_sdk|
         fb_ads_sdk.dependency 'FBAudienceNetwork','6.5.1'
-        fb_ads_sdk.dependency 'FBSDKCoreKit','18.0.0'
+        fb_ads_sdk.dependency 'FBSDKCoreKit','14.0.0'
         fb_ads_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FB_ADS_ENABLED FACEBOOK_ENABLED'}
     end
     
@@ -99,7 +99,7 @@ Pod::Spec.new do |s|
         applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','3.7.5.0'
         applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','6.10.1.0'
         applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','7.8.3.2'
-        applovin_max_sdk.dependency 'FBSDKCoreKit','18.0.0'
+        applovin_max_sdk.dependency 'FBSDKCoreKit','14.0.0'
         applovin_max_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) APPLOVIN_MAX_ENABLED' }
     end
     
@@ -139,9 +139,9 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'fb_login_sdk' do |fb|
-        fb.dependency 'FBSDKCoreKit','18.0.0'
-        fb.dependency 'FBSDKShareKit','18.0.0'
-        fb.dependency 'FBSDKLoginKit','18.0.0'
+        fb.dependency 'FBSDKCoreKit','14.0.0'
+        fb.dependency 'FBSDKShareKit','14.0.0'
+        fb.dependency 'FBSDKLoginKit','14.0.0'
         fb.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FACEBOOK_LOGIN_ENABLED FACEBOOK_ENABLED'}
     end
     
