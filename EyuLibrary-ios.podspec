@@ -98,7 +98,7 @@ Pod::Spec.new do |s|
         applovin_max_sdk.dependency 'AppLovinMediationByteDanceAdapter','5.7.0.8.0'
         applovin_max_sdk.dependency 'AppLovinMediationUnityAdsAdapter','4.9.2.1'
         applovin_max_sdk.dependency 'AppLovinMediationVungleAdapter','7.2.2.0'
-        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','8.2.5.2'
+        applovin_max_sdk.dependency 'AppLovinMediationFyberAdapter','7.8.3.2'
         applovin_max_sdk.dependency 'FBSDKCoreKit','14.0.0'
         applovin_max_sdk.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) APPLOVIN_MAX_ENABLED' }
     end
