@@ -116,12 +116,17 @@ static bool sIsTrackingInited = false;
     [[FBSDKApplicationDelegate sharedInstance] initializeSDK];
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
-    [FBSDKSettings setAutoLogAppEventsEnabled:YES];
-    [FBSDKSettings setAdvertiserTrackingEnabled:YES];
-//    [FBSDKSettings setAutoInitEnabled: YES ];
-    [FBSDKSettings setAdvertiserIDCollectionEnabled:YES];
+//    [FBSDKSettings setAutoLogAppEventsEnabled:YES];
+//    [FBSDKSettings setAdvertiserTrackingEnabled:YES];
+////    [FBSDKSettings setAutoInitEnabled: YES ];
+//    [FBSDKSettings setAdvertiserIDCollectionEnabled:YES];
+    
+    [[FBSDKSettings sharedSettings] setAutoLogAppEventsEnabled:true];
+    [[FBSDKSettings sharedSettings] setAdvertiserTrackingEnabled:true];
+    [[FBSDKSettings sharedSettings] setAdvertiserIDCollectionEnabled:true];
+    
     [self fetchDeferredAppLink:launchOptions];
-    [FBSDKAppEvents activateApp];
+    [[FBSDKAppEvents shared] activateApp];
     sIsFBInited = true;
 }
 

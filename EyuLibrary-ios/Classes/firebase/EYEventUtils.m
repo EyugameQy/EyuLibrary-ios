@@ -66,7 +66,8 @@
     
 #ifdef FACEBOOK_ENABLED
     if([EYSdkUtils isFBInited]){
-        [FBSDKAppEvents logEvent:event parameters:strDict];
+//        [FBSDKAppEvents logEvent:event parameters:strDict];
+        [[FBSDKAppEvents shared] logEvent:event parameters:strDict];
     }
 #endif
 }
